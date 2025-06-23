@@ -1,0 +1,6 @@
+.terraform/
+*.zip
+*.tar
+*.log
+*.bin
+*.exe
