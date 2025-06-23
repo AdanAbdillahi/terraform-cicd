@@ -13,9 +13,9 @@ resource "aws_security_group" "test_sg" {
 }
 
 resource "aws_instance" "test_instance" {
-  ami                         = "ami-044415bb13eee2391"
-  instance_type               = "t2.micro"
-  security_groups             = [aws_security_group.test_sg.name]
+  ami             = "ami-044415bb13eee2391"
+  instance_type   = "t2.micro"
+  security_groups = [aws_security_group.test_sg.name]
   tags = {
     Name = "TestInstance"
   }
