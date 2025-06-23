@@ -2,7 +2,7 @@ provider "aws" {
   region = "eu-west-2"
 }
 
-resource "aws_security_grouppp" "test_sg" {
+resource "aws_security_group" "test_sg" {
   name_prefix = "test-sg-"
   ingress {
     from_port   = 22
